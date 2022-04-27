@@ -34,10 +34,10 @@
                 <h1>Paulo Cesar Jr</h1>
                 <h5>Front-End Developer</h5>
             </div>
-            <div id="arrow">
-                <i class="fas fa-sort-down"></i>
+            <div onclick= "displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
             </div>
-            <div id="about">
+            <div style="display: none" id="about">
                 <p>
                     Educador Certificado Microsoft | Programador de Jogos | Mestre em Antropologia Social | Bacharel em Administração | Especialista em Marketing Digital.
                     <p>Desejo construir uma rede de contatos colaborativos e profissionais, para desenvolver projetos criativos, inovadores e relevantes para a sociedade.</p>
@@ -64,17 +64,28 @@
                             illum ab ratione delectus necessitatibus quam beatae officia enim.</p>
                     </div>                   
             </div>
-            <div class="form">
-                <div>
-                    <h3>Deixe seu contato!</h3>
-                </div>
-                <form action="">
-                    <input type="text" placeholder="seu melhor e-mail :)">
-                    <button>Enviar!</button>
-                </form>
-            </div>
-        </section>
-    </main>    
+     </section>
+     <div class="form">
+        <div>
+            <h3>Deixe seu contato!</h3>
+        </div>
+        <form action="">
+            <input type="text" placeholder="seu melhor e-mail :)">
+            <button>Enviar!</button>
+        </form>
+    </div>
+
+    </main> 
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+
+        }
+    </script>   
 </body>
 <footer>
     <div class="rodape">
