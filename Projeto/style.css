@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+header ul{
+    display: flex;
+
+}
+
+header ul li{
+    padding: 5px;
+    
+}
+.profile-picture {
+    border-radius: 20px;
+    border: solid 4px #0c8de4;
+    width: 100px;
+  }
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+.card h5 p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: aliceblue;
+}
+
+body{
+    height: 100vh;
+    /* background-repeat: no-repeat;
+    background-position: center center fixed; */
+    background: url(./img/background-gaf52c5272_1920.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* background: #4568DC;  /* fallback for old browsers */
+    /* background: linear-gradient(90deg, #4568DC, #B06AB3);
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+
+
+
+}
+
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 90px;
+}
+.container .name h5{
+    font-size: 60px;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0.219);
+    color: black;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.form input{
+    width: 50%;
+}
+
+.form button{
+    width: 15%;
+}
+
+.flex{
+    display: flex;
+    
+}
+.flex div{
+    border: 1px solid rgb(13, 150, 241);
+    margin: 50px;
+    flex-basis: 100%;
+}
+
+.flex img{
+    max-width: 300px;
+}
+
+.rodape p{
+    text-align: center;
+    padding: 20px;
+}
