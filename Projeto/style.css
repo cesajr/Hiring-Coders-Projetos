@@ -20,6 +20,14 @@ header ul li{
     padding: 5px;
     
 }
+
+header ul li a:hover{
+    color: blue;
+    text-decoration:  underline;
+}
+header ul li a{
+    transition: 800px;
+}
 .profile-picture {
     border-radius: 20px;
     border: solid 4px #0c8de4;
@@ -65,6 +73,31 @@ body{
     font-size: 60px;
 }
 
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
 #about p{
     max-width: 600px;
     margin: 0 auto;
@@ -77,15 +110,36 @@ body{
     width: 40%;
     margin: 0 auto;
     padding: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 
 .form input{
     width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    align-items: center;
 }
 
 .form button{
     width: 15%;
+    padding: 5px 10px;
+    background-color: linear-gradiente (to right, yellowgreen)
+    color: #464646;
+    font-weight: 600;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.form button:hover{
+    background-color: azure;
+    color: darkorange;
 }
 
 .flex{
@@ -105,4 +159,25 @@ body{
 .rodape p{
     text-align: center;
     padding: 20px;
+}
+
+/* ajuste de responsividade */
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+
 }
